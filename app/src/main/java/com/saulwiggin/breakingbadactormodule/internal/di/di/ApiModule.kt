@@ -1,4 +1,4 @@
-package com.saulwiggin.breakingbadactormodule.internal.di
+package com.saulwiggin.breakingbadactormodule.internal.di.di
 
 import com.saulwiggin.breakingbadactormodule.data.network.ActorApiService
 import org.koin.dsl.module
