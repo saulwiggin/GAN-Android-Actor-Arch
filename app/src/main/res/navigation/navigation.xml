@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/actorListFragment">
+
+    <fragment
+        android:id="@+id/actorListFragment"
+        android:name="com.saulwiggin.breakingbadactormodule.ui.actorlist.ActorListFragment"
+        android:label="ActorListFragment"
+        tools:layout="@layout/fragment_actor_list">
+        <action
+            android:id="@+id/action_actorListFragment_to_actorDetailFragment"
+            app:destination="@id/actorDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actorDetailFragment"
+        android:name="com.saulwiggin.breakingbadactormodule.ui.actordetail.ActorDetailFragment"
+        android:label="ActorDetailFragment"
+        tools:layout="@layout/fragment_actor_detail">
+        <argument
+            android:name="actorModel"
+            app:argType="com.saulwiggin.breakingbadactormodule.model.ActorModel" />
+    </fragment>
+</navigation>
