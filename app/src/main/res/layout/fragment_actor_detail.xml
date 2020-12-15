@@ -26,8 +26,9 @@
 
                     <ImageView
                         android:id="@+id/ivActor"
-                        android:layout_width="390dp"
-                        android:layout_height="211dp"
+                        android:layout_width="410dp"
+                        android:layout_height="219dp"
+                        android:adjustViewBounds="true"
                         android:scaleType="centerInside"
                         app:imageUrl="@{results.img}"
                         app:layout_constraintBottom_toTopOf="@+id/tvName"
@@ -35,7 +36,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription"
-                        android:adjustViewBounds="true"
                         tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
